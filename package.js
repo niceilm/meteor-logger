@@ -12,7 +12,6 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.3');
-  api.use('meteorhacks:npm@1.5.0', 'server');
   api.addFiles('logger_client.js', 'client');
   api.addFiles('logger_server.js', 'server');
   api.export('logger');
