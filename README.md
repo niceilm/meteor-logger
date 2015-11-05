@@ -6,8 +6,11 @@ meteor add flynn:logger
 ## use
 ```
 if(Meteor.isServer) {
-    logger.log("logging server side something");
+    $log.log("logging server side something");
 } else {
-    logger.log("logging client side something");
+    $log.log("logging client side something");
 }
+
 ```
+
+inspire angular $logProvider

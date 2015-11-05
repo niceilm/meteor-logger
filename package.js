@@ -1,6 +1,6 @@
 Package.describe({
   name: 'flynn:logger',
-  version: '0.0.1',
+  version: '0.0.3',
   // Brief, one-line summary of the package.
   summary: 'same interface client/server by logger',
   // URL to the Git repository containing the source code for this package.
@@ -12,9 +12,10 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.3');
+  api.export('$log');
+  api.addFiles('common.js');
   api.addFiles('logger_client.js', 'client');
   api.addFiles('logger_server.js', 'server');
-  api.export('logger');
 });
 
 Package.onTest(function(api) {
@@ -23,6 +24,6 @@ Package.onTest(function(api) {
   api.addFiles('logger-tests.js');
 });
 
-Npm.depends({
-  "winston": "1.0.1"
-});
+//Npm.depends({
+//  "winston": "1.0.1"
+//});
