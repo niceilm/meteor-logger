@@ -1,6 +1,6 @@
 Package.describe({
   name: 'flynn:logger',
-  version: '0.0.3',
+  version: '0.0.4',
   // Brief, one-line summary of the package.
   summary: 'same interface client/server by logger',
   // URL to the Git repository containing the source code for this package.
@@ -11,7 +11,7 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.1.0.3');
+  api.versionsFrom('METEOR@1.2');
   api.export('$log');
   api.addFiles('common.js');
   api.addFiles('logger_client.js', 'client');
