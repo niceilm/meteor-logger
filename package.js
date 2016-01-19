@@ -23,7 +23,3 @@ Package.onTest(function(api) {
   api.use('flynn:logger');
   api.addFiles('logger-tests.js');
 });
-
-//Npm.depends({
-//  "winston": "1.0.1"
-//});
