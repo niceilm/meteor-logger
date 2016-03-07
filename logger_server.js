@@ -35,8 +35,8 @@ var ColorType = {
   reset: ColorSet.Reset
 };
 
-
-LogProvider = new Logger.$LogProvider(global, ColorType);
+var disableLogColor = process.env.DISABLE_LOG_COLOR;
+LogProvider = new Logger.$LogProvider(global, disableLogColor ? null : ColorType);
 
 var debug = !!(Meteor.settings && Meteor.settings.public && Meteor.settings.public.logger && Meteor.settings.public.logger.debug);
 

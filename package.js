@@ -1,6 +1,6 @@
 Package.describe({
   name: 'flynn:logger',
-  version: '0.0.4',
+  version: '0.0.5',
   // Brief, one-line summary of the package.
   summary: 'same interface client/server by logger',
   // URL to the Git repository containing the source code for this package.
